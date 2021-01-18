@@ -20,7 +20,7 @@ if ( !isset( $_SESSION[ 'userid' ] ) ){
 
 <div class="container pt-3 clearfix" style="text-align:center">
 
-    <h1>Welcome to my team!</h1>
+    <h1>Welcome to my web cv!</h1>
 	<a class="btn  btn-outline-success"  href="profile/index.php?memberid=1">Click here!</a>
 </div>
 <?php

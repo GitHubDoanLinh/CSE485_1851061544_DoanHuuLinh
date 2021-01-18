@@ -52,17 +52,13 @@ if (!isset($_SESSION['memberid'])) {
                                 $result = mysqli_query($conn, $sql);
                                 if (mysqli_num_rows($result) > 0) {
                                     $subrow = mysqli_fetch_all($result);
-                                }
+                                
 
                                 foreach ($subrow as $sub_skill) {
                                     echo '<form action="edit-process.php" class="form-inline" method="post"> <tr>'; ?>
                                     <div class="form-group" hidden>
                                         <label for="">subskill id</label>
                                         <input type="text" name="sub-skillid" id="" class="form-control" value="<?php echo $sub_skill[1] ?>">
-                                    </div>
-                                    <div class="form-group" hidden>
-                                        <label for="">skill id</label>
-                                        <input type="text" name="skillid" id="" class="form-control" value="<?php echo $skill[1] ?>">
                                     </div>
                                     <td>
 
@@ -83,7 +79,7 @@ if (!isset($_SESSION['memberid'])) {
 
                                 <?php
                                     echo '</form> </tr>';
-                                }
+                                }}
                                 ?>
                             </tbody>
                         </table>
